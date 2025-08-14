@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bank Front Page</title>
+  <!-- Link CSS file -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <main class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL4eQAv8YVZQJnFAtnxqs-zoMtsJryohcScg&s" alt="Bank Logo" />
+      </div>
+      <div class="bank-title">Central Bank Of India</div>
+      <!-- Menu using table -->
+      <nav class="nav" aria-label="Main">
+        <table>
+          <tr>
+            <td><a href="#">Home</a></td>
+            <td><a href="#">About Us</a></td>
+            <td><a href="#">Login</a></td>
+          </tr>
+        </table>
+      </nav>
+    </header>
+
+    <!-- Banner + Scrolling News -->
+    <section class="hero">
+      <div class="banner">
+        <img src="banna.png" alt="Banner" />
+      </div>
+      <aside class="news">
+        <h3>Scrolling News</h3>
+        <marquee direction="up" scrollamount="3" height="120">
+          • New Fixed Deposit rates announced.<br/>
+          • Open a Savings A/C in 5 minutes.<br/>
+          • Credit Card festival offers live now.<br/>
+          • Loan approvals in 24 hours.
+        </marquee>
+      </aside>
+    </section>
+
+    <!-- Info -->
+    <section class="info">
+      <h2>About the Bank</h2>
+      <p>We offer secure and convenient banking services across savings, deposits, loans and cards.</p>
+      <ul>
+        <li>24×7 internet &amp; mobile banking</li>
+        <li>Nationwide ATM network</li>
+        <li>Dedicated customer support</li>
+      </ul>
+    </section>
+
+    <!-- Services -->
+    <section class="services">
+      <h2>Services</h2>
+      <div class="cards">
+        <article class="card">
+          <h4>Saving A/C</h4>
+          <img src="https://media.istockphoto.com/id/1282812684/vector/cashback-icon-return-money-cash-back-rebate-hand-hold-coin-e-commerce-and-marketing-vector.jpg?s=612x612&w=0&k=20&c=k2sQm3ZZ1o9j-hy4b6bmuOTzlQbvq6P5Igvg9I_CG7A=" alt="Saving Account">
+        </article>
+        <article class="card">
+          <h4>Fixed Deposit</h4>
+          <img src="fixed depos.jpg" alt="Fixed Deposit">
+        </article>
+        <article class="card">
+          <h4>Credit Cards</h4>
+          <img src="data:image/png;base64,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" alt="Credit Cards">
+        </article>
+        <article class="card">
+          <h4>Loan</h4>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnkzfA31o3IgCGvgWZ25hFIQO2A44JmKz9OVT1vDQM-YDZMZl4EVbqfccRAomHqGhEDuI&usqp=CAU" alt="Loan">
+        </article>
+      </div>
+    </section>
+
+    <footer>© 2025 All Rights Reserved</footer>
+  </main>
+</body>
+</html>
