@@ -146,29 +146,53 @@ footer {
   text-align: center;
 }
 
-/* Small screens */
-@media (max-width: 700px) {
-  .bank-title { font-size: 26px; }
+/* Mobile Responsive Styles Ali */
+@media (max-width: 768px) {
+  .sidebar {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 12px 20px;
+    flex-direction: row;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .sidebar a {
+    margin: 0 12px;
+    font-size: 1.8rem;
+  }
+  
+  /* Adjust container to prevent overlap with bottom sidebar */
+  .container {
+    margin-bottom: 80px;
+  }
 }
-    /* Styles for screens smaller than 768px */
-    @media screen and (max-width: 767px) {
-        .container {
-            width: 100%;
-            padding: 10px;
-        }
-        .sidebar {
-            display: none; /* Hide sidebar on small screens */
-        }
-    }
 
-    /* Styles for screens larger than or equal to 768px */
-    @media screen and (min-width: 768px) {
-        .container {
-            width: 80%;
-            margin: 0 auto;
-        }
-        .sidebar {
-            float: left;
-            width: 20%;
-        }
-    }
+/* Adjust for very small screens */
+@media (max-width: 360px) {
+  .sidebar a {
+    margin: 0 8px;
+    font-size: 1.6rem;
+  }
+}
+
+/* Landscape mode adjustments */
+@media (max-height: 500px) and (orientation: landscape) {
+  .sidebar {
+    padding: 8px 15px;
+  }
+  
+  .sidebar a {
+    margin: 0 10px;
+    font-size: 1.4rem;
+  }
+  
+  .container {
+    margin-bottom: 70px;
+  }
+}
